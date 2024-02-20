@@ -1,0 +1,75 @@
+/* common form error  */
+label.error{
+    color: #f1416c!important;
+    padding-top: 10px!important;
+    font-size: 13px!important;
+    font-weight: 400 !important;
+}
+
+/* Loader start here*/
+#circle {    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;	
+}
+
+.loader1 {
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    border: 5px solid transparent;
+    border-top: 3px solid #1086ff;
+    border-radius: 50%;
+    animation: rotate 2s linear infinite
+}
+.loader2 {
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    border: 5px solid transparent;
+    border-top: 3px solid #21213d;
+    border-radius: 50%;
+    animation: rotate 2s linear infinite
+}
+.loader3 {
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    border: 5px solid transparent;
+    /* border-top: 3px solid #d38f18; */
+    border-top: 3px solid #ffff;
+    border-radius: 50%;
+    animation: rotate 2s linear infinite
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg)
+    }	
+}
+
+.loader-logo{
+    width: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#page-preloader {
+    position: fixed;
+    z-index: 100500;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #16122903; */
+    background: #161229f7;
+} 
+/* Loader end here */
+
+.app-sidebar .menu >.menu-item .menu-link .menu-arrow:after {
+    background-color: #E3E5EB!important;
+}
